@@ -113,6 +113,17 @@ body{
 .reveal{opacity:0;transform:translateY(14px);transition:opacity .5s ease, transform .5s ease}
 .reveal.show{opacity:1;transform:none}
 
+/* Simple text list for "My Work" */
+.project-list{
+  margin: .5rem 0 0;
+  padding-left: 1.25rem;
+  color: var(--text);
+}
+.project-list li{
+  margin: .35rem 0;
+  list-style: disc;
+}
+
 /* Responsive */
 @media (max-width:920px){
   .hero-wrap{grid-template-columns:1fr}
