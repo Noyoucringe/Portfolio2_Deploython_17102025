@@ -104,16 +104,3 @@ form?.addEventListener('submit', async (e) => {
     submitBtn?.removeAttribute('disabled');
   }
 });
-
-// Download CV buttons
-function downloadCVHandler(e){
-  const file = e.currentTarget.dataset.cv || 'cv.pdf';
-  const a = document.createElement('a');
-  a.href = file;
-  a.download = file;
-  document.body.appendChild(a);
-  a.click();
-  a.remove();
-}
-document.getElementById('downloadCV')?.addEventListener('click', downloadCVHandler);
-document.getElementById('downloadCV2')?.addEventListener('click', downloadCVHandler);
